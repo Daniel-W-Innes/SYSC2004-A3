@@ -14,6 +14,7 @@ public class LanguageFlashCardApplication {
 				c = false;
 			}
 		}
+		System.out.println("You've got a score of " + languageFlashCards.getScore() + " so far");
 		scanner.close();
 	}
 }

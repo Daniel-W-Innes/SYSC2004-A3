@@ -24,6 +24,7 @@ public class MultiplicationFlashCardApplication {
 				c = false;
 			}
 		}
+		System.out.println("You've got a score of " + multiplicationFlashCards.getScore() + " so far");
 		scanner.close();
 	}
 
