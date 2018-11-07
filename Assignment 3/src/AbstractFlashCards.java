@@ -20,13 +20,13 @@ public abstract class AbstractFlashCards {
 
 	protected void addCard(String question, String answer) {
 		flashCards.put(question, answer);
-		unansweredCards.add(random.nextInt(unansweredCards.size() - 1), question);
+		unansweredCards.add(random.nextInt(unansweredCards.size()+1), question);
 	}
 
 	public void reset() {
 		unansweredCards.clear();
 		for (String question : flashCards.keySet()) {
-			unansweredCards.add(random.nextInt(unansweredCards.size() - 1), question);
+			unansweredCards.add(random.nextInt(unansweredCards.size()+1), question);
 		}
 	}
 
@@ -40,10 +40,14 @@ public abstract class AbstractFlashCards {
 			String question = unansweredCards.get(0);
 			unansweredCards.remove(question);
 			System.out.println(question);
-			if (scanner.nextLine() == flashCards.get(question)) {
+			if (scanner.nextLine().toLowerCase().equals(flashCards.get(question).toLowerCase())) {
 				score++;
+				System.out.println("You're correct!");
+				System.out.println("Score = " + score);
 			} else {
-				unansweredCards.add(random.nextInt(unansweredCards.size() - 1), question);
+				unansweredCards.add(random.nextInt(unansweredCards.size()+1), question);
+				System.out.println("Sorry, please try again");
+				System.out.println("Score = " + score);
 			}
 			return true;
 		}
