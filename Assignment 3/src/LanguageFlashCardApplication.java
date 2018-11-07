@@ -15,5 +15,6 @@ public class LanguageFlashCardApplication {
 				c = false;
 			}
 		}
+		scanner.close();
 	}
 }

@@ -24,6 +24,7 @@ public class MultiplicationFlashCardApplication {
 				c = false;
 			}
 		}
+		scanner.close();
 	}
 
 }

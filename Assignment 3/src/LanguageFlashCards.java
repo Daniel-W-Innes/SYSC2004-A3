@@ -5,10 +5,10 @@ import java.io.IOException;
 
 public class LanguageFlashCards extends AbstractFlashCards {
 	private final String COMMA_DELIMITER = ",";
+	@SuppressWarnings("unused")
 	private String filename;
 	
-	LanguageFlashCards(String filename) throws IOException{
-		this.filename = filename;		
+	LanguageFlashCards(String filename) throws IOException{	
 		FileReader fileReader = null;
 		BufferedReader bufferedReader = null;
 		String line = "";
