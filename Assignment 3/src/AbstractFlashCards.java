@@ -43,12 +43,11 @@ public abstract class AbstractFlashCards {
 			if (scanner.nextLine().toLowerCase().equals(flashCards.get(question).toLowerCase())) {
 				score++;
 				System.out.println("You're correct!");
-				System.out.println("Score = " + score);
 			} else {
 				unansweredCards.add(random.nextInt(unansweredCards.size()+1), question);
 				System.out.println("Sorry, please try again");
-				System.out.println("Score = " + score);
 			}
+			System.out.println("Score = " + score);
 			return true;
 		}
 		return false;
