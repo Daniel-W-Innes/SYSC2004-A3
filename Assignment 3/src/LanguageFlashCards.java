@@ -7,18 +7,25 @@ public class LanguageFlashCards extends AbstractFlashCards {
 	private final String COMMA_DELIMITER = ",";
 	@SuppressWarnings("unused")
 	private String filename;
-	
-	LanguageFlashCards(String filename) throws IOException{	
+
+	/**
+	 * Instantiates a new language flashcards deck.
+	 *
+	 * @param filename the filename
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
+	LanguageFlashCards(String filename) throws IOException {
 		FileReader fileReader = null;
 		BufferedReader bufferedReader = null;
 		String line = "";
 		String[] columnHeadings = null;
 		try {
+			/** read and add all cards from file */
 			fileReader = new FileReader(filename);
 			bufferedReader = new BufferedReader(fileReader);
 			while ((line = bufferedReader.readLine()) != null) {
 				columnHeadings = line.split(COMMA_DELIMITER);
-				addCard(columnHeadings[0],columnHeadings[1]);
+				addCard(columnHeadings[0], columnHeadings[1]);
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
