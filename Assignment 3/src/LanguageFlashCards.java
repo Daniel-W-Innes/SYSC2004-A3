@@ -3,6 +3,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * The Class LanguageFlashCards.
+ * 
+ * @author Daniel Innes 101067175
+ */
 public class LanguageFlashCards extends AbstractFlashCards {
 	private final String COMMA_DELIMITER = ",";
 	@SuppressWarnings("unused")

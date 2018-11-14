@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 /**
  * The Class LanguageFlashCardApplication.
+ * 
+ * @author Daniel Innes 101067175
  */
 public class LanguageFlashCardApplication {
 

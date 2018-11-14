@@ -1,6 +1,8 @@
 
 /**
  * The Class MultiplicationFlashCards.
+ * 
+ * @author Daniel Innes 101067175
  */
 public class MultiplicationFlashCards extends AbstractFlashCards {
 

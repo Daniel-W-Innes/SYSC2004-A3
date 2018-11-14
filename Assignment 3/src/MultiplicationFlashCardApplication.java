@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 /**
  * The Class MultiplicationFlashCardApplication.
+ * 
+ * @author Daniel Innes 101067175
  */
 public class MultiplicationFlashCardApplication {
 

@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 /**
  * The Class AbstractFlashCards.
+ * 
+ * @author Daniel Innes 101067175
  */
 public abstract class AbstractFlashCards {
 	
